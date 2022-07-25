@@ -1,0 +1,62 @@
+.text__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  .text {
+    width: 31%;
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-bottom: 70px;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      padding-top: 60px;
+      position: relative;
+      &::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(../img/text_bg01.svg);
+        background-size: 160px;
+      }
+    }
+    &:nth-child(1) h3::before {
+      background-position: 5px 5px;
+      background-color: #d3d8fa;
+    }
+    &:nth-child(2) h3::before {
+      background-position: -36px 5px;
+      background-color: #cef6ee;
+    }
+    &:nth-child(3) h3::before {
+      background-position: -75px 5px;
+      background-color: #f6f4e0;
+    }
+    &:nth-child(4) h3::before {
+      background-position: -115px 5px;
+      background-color: #f8d1d8;
+    }
+    &:nth-child(5) h3::before {
+      background-position: -115px 5px;
+      background-color: #f8d1d8;
+    }
+    &:nth-child(6) h3::before {
+      background-position: -115px 5px;
+      background-color: #f8d1d8;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.6;
+      text-align: justify;
+    }
+  }
+}
